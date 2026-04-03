@@ -1,0 +1,14 @@
+spring:
+    threads:
+        virtual:
+            enabled: true
+    application:
+        name: network-monitor
+management:
+    endpoints:
+        web:
+            exposure:
+                include: health,info,metrics,prometheus
+    health:
+        rabbit:
+            enabled: false
